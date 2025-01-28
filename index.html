@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silicon Valley Projects</title>
+  <link rel="stylesheet" href="">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-100 dark:bg-gray-900 dark:text-white">
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">Silicon Valley Projects</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-blue-600 dark:hover:text-blue-400">Home</a></li>
+          <li><a href="#services" class="hover:text-blue-600 dark:hover:text-blue-400">Services</a></li>
+          <li><a href="#expertise" class="hover:text-blue-600 dark:hover:text-blue-400">Expertise</a></li>
+          <li><a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero h-screen flex items-center justify-center text-white text-center">
+    <div data-aos="fade-up" data-aos-duration="1000">
+      <h1 class="text-5xl font-bold mb-4">Innovative Solutions for a Digital World</h1>
+      <p class="text-xl mb-8">Transforming ideas into reality with cutting-edge technology.</p>
+      <a href="#services" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+<section id="services" class="container mx-auto py-16">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up" data-aos-duration="1000">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Managed Service Provider -->
+      <div class="card bg-white p-6 rounded-lg shadow-lg text-center" data-aos="fade-up" data-aos-duration="1000">
+        <h3 class="text-xl font-bold mb-4">Managed Service Provider</h3>
+        <p>Comprehensive IT management and support to keep your business running smoothly.</p>
+      </div>
+      <!-- Technical Staffing -->
+      <div class="card bg-white p-6 rounded-lg shadow-lg text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <h3 class="text-xl font-bold mb-4">Technical Staffing</h3>
+        <p>Providing skilled IT professionals to meet your project and operational needs.</p>
+      </div>
+      <!-- Project Management -->
+      <div class="card bg-white p-6 rounded-lg shadow-lg text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <h3 class="text-xl font-bold mb-4">Project Management</h3>
+        <p>Expert planning, execution, and delivery of IT projects on time and within budget.</p>
+      </div>
+      <!-- Alert Monitoring -->
+      <div class="card bg-white p-6 rounded-lg shadow-lg text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+        <h3 class="text-xl font-bold mb-4">Alert Monitoring</h3>
+        <p>Proactive monitoring and alerting to ensure system uptime and performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise Section -->
+  <section id="expertise" class="bg-gray-200 dark:bg-gray-700 py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up" data-aos-duration="1000">Our Expertise</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="text-xl font-bold mb-4">Cloud Computing</h3>
+          <p>Scalable and secure cloud solutions for your business.</p>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <h3 class="text-xl font-bold mb-4">Data Analytics</h3>
+          <p>Unlock insights from your data with advanced analytics.</p>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <h3 class="text-xl font-bold mb-4">Cybersecurity</h3>
+          <p>Protect your business from cyber threats.</p>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+          <h3 class="text-xl font-bold mb-4">Digital Transformation</h3>
+          <p>Modernize your business with cutting-edge technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mx-auto py-16">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up" data-aos-duration="1000">Featured Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000">
+        <img src="assets/images/project1.jpg" alt="Project 1" class="mb-4 rounded-lg">
+        <h3 class="text-xl font-bold mb-2">Project 1</h3>
+        <p>Description of the project and its impact.</p>
+      </div>
+      <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <img src="assets/images/project1.jpg" alt="Project 2" class="mb-4 rounded-lg">
+        <h3 class="text-xl font-bold mb-2">Project 2</h3>
+        <p>Description of the project and its impact.</p>
+      </div>
+      <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <img src="assets/images/project1.jpg" alt="Project 3" class="mb-4 rounded-lg">
+        <h3 class="text-xl font-bold mb-2">Project 3</h3>
+        <p>Description of the project and its impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-gray-200 dark:bg-gray-700 py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up" data-aos-duration="1000">What Our Clients Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000">
+          <p class="mb-4">"Silicon Valley Projects transformed our business with their innovative solutions."</p>
+          <p class="font-bold">- Client A</p>
+        </div>
+        <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <p class="mb-4">"Their team is highly skilled and professional. Highly recommended!"</p>
+          <p class="font-bold">- Client B</p>
+        </div>
+        <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <p class="mb-4">"We achieved our goals faster than expected. Great work!"</p>
+          <p class="font-bold">- Client C</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog/Insights Section -->
+  <section id="blog" class="container mx-auto py-16">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up" data-aos-duration="1000">Insights & Blog</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000">
+        <img src="assets/images/blog1.jpg" alt="Blog 1" class="mb-4 rounded-lg">
+        <h3 class="text-xl font-bold mb-2">The Future of AI</h3>
+        <p class="mb-4">Exploring the impact of AI on businesses.</p>
+        <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">Read More →</a>
+      </div>
+      <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <img src="assets/images/blog2.jpg" alt="Blog 2" class="mb-4 rounded-lg">
+        <h3 class="text-xl font-bold mb-2">Cloud Computing Trends</h3>
+        <p class="mb-4">How cloud computing is shaping the future.</p>
+        <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">Read More →</a>
+      </div>
+      <div class="card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <img src="assets/images/blog3.jpg" alt="Blog 3" class="mb-4 rounded-lg">
+        <h3 class="text-xl font-bold mb-2">Cybersecurity Best Practices</h3>
+        <p class="mb-4">Protecting your business from cyber threats.</p>
+        <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">Read More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="bg-gray-200 dark:bg-gray-700 py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up" data-aos-duration="1000">Our Team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+          <img src="assets/images/team1.jpg" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">John Doe</h3>
+          <p>CEO & Founder</p>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <img src="assets/images/team2.jpg" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Jane Smith</h3>
+          <p>CTO</p>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <img src="assets/images/team3.jpg" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Mike Johnson</h3>
+          <p>Lead Developer</p>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+          <img src="assets/images/team4.jpg" alt="Team Member 4" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-bold mb-2">Sarah Lee</h3>
+          <p>UI/UX Designer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-8" data-aos="fade-up" data-aos-duration="1000">Contact Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Contact Form -->
+        <form class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg text-gray-800 dark:text-white" data-aos="fade-up" data-aos-duration="1000">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-bold mb-2">Name</label>
+            <input type="text" id="name" class="w-full p-2 border rounded-lg dark:bg-gray-800 dark:border-gray-600" placeholder="Your Name">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-bold mb-2">Email</label>
+            <input type="email" id="email" class="w-full p-2 border rounded-lg dark:bg-gray-800 dark:border-gray-600" placeholder="Your Email">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-bold mb-2">Message</label>
+            <textarea id="message" class="w-full p-2 border rounded-lg dark:bg-gray-800 dark:border-gray-600" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Send Message</button>
+        </form>
+
+        <!-- Contact Info & Newsletter -->
+        <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+          <p class="mb-4">Email: info@siliconvalleyprojects.com</p>
+          <p class="mb-4">Phone: (123) 456-7890</p>
+          <div class="flex justify-center space-x-4 mb-8">
+            <a href="#" class="text-blue-400 hover:text-blue-300">Facebook</a>
+            <a href="#" class="text-blue-400 hover:text-blue-300">Twitter</a>
+            <a href="#" class="text-blue-400 hover:text-blue-300">LinkedIn</a>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+          <form class="flex justify-center">
+            <input type="email" placeholder="Your Email" class="p-2 border rounded-l-lg dark:bg-gray-800 dark:border-gray-600">
+            <button type="submit" class="bg-blue-600 text-white px-4 rounded-r-lg hover:bg-blue-700">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

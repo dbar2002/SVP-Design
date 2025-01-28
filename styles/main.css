@@ -1,0 +1,56 @@
+/* Custom Styles */
+.hero {
+    background-image: url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Dark Mode Styles */
+  .dark .hero {
+    background-image: url('../assets/images/hero-bg-dark.jpg'); /* Optional: Use a darker hero image */
+  }
+  
+  .dark .card {
+    background-color: #2d3748;
+    color: #ffffff;
+  }
+  
+  .dark .card:hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark input,
+  .dark textarea {
+    background-color: #4a5568;
+    color: #ffffff;
+    border-color: #4a5568;
+  }
+  
+  .dark input::placeholder,
+  .dark textarea::placeholder {
+    color: #a0aec0;
+  }
+  
+  /* Animations */
+  [data-aos] {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  [data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  [data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
