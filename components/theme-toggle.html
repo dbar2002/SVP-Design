@@ -1,0 +1,36 @@
+<!-- ========== THEME SWITCHER (dropdown, 3 options) ========== -->
+<!-- Place inside .navbar__links, before the Contact Us button. -->
+<!-- Requires main.js for functionality. -->
+
+<div class="theme-switcher">
+  <button class="theme-switcher__btn" aria-label="Theme">
+    <span class="theme-switcher__icon--light">☀️</span>
+    <span class="theme-switcher__icon--dark">🌙</span>
+    <span class="theme-switcher__icon--system">💻</span>
+  </button>
+  <div class="theme-switcher__menu">
+    <button class="theme-switcher__option" data-mode="light">
+      <span class="theme-switcher__option-icon">☀️</span> Light
+      <span class="theme-switcher__option-check">✓</span>
+    </button>
+    <button class="theme-switcher__option" data-mode="dark">
+      <span class="theme-switcher__option-icon">🌙</span> Dark
+      <span class="theme-switcher__option-check">✓</span>
+    </button>
+    <button class="theme-switcher__option" data-mode="system">
+      <span class="theme-switcher__option-icon">💻</span> System
+      <span class="theme-switcher__option-check">✓</span>
+    </button>
+  </div>
+</div>
+
+<!--
+  HOW IT WORKS:
+  - Click the circle button to open a dropdown
+  - Pick Light, Dark, or System
+  - System follows OS preference
+  - Active option shows a ✓ checkmark
+  - Button icon updates to show current mode
+  - Saved to localStorage, persists across pages
+  - Defaults to System on first visit
+-->

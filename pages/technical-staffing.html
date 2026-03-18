@@ -1,54 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Technical Staffing - Silicon Valley Projects</title>
-  <link rel="stylesheet" href="../styles/main.css">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Staffing — Silicon Valley Projects</title>
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="../assets/images/logo-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/variables.css" />
+  <link rel="stylesheet" href="../assets/css/global.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/pages.css" />
 </head>
-<body class="font-sans bg-gray-100">
-  <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <div class="text-2xl font-bold text-blue-600">Silicon Valley Projects</div>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="../index.html" class="hover:text-blue-600">Home</a></li>
-          <li><a href="../index.html#services" class="hover:text-blue-600">Services</a></li>
-          <li><a href="../index.html#projects" class="hover:text-blue-600">Projects</a></li>
-          <li><a href="../index.html#contact" class="hover:text-blue-600">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main class="container mx-auto py-16">
-    <h1 class="text-4xl font-bold text-center mb-8">Technical Staffing</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div>
-        <h2 class="text-2xl font-bold mb-4">Our Expertise</h2>
-        <p class="mb-4">We provide skilled IT professionals to meet your project and operational needs. Our staffing services include:</p>
-        <ul class="list-disc list-inside mb-4">
-          <li>On-demand IT specialists</li>
-          <li>Permanent and contract staffing</li>
-          <li>Expertise in various technologies</li>
-          <li>Quick onboarding and deployment</li>
-        </ul>
-        <a href="../index.html#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Contact Us</a>
+<body>
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__logo"><img src="../assets/images/logo.png" alt="SVP" class="navbar__logo-img" />SVP<span>_</span></a>
+      <div class="navbar__links">
+        <a href="about.html" class="navbar__link">About</a>
+        <div class="navbar__dropdown">
+          <a href="#" class="navbar__link">Services ▾</a>
+          <div class="navbar__dropdown-menu">
+            <a href="managed-services.html" class="navbar__dropdown-item">Managed Services</a>
+            <a href="technical-staffing.html" class="navbar__dropdown-item">Technical Staffing</a>
+            <a href="project-management.html" class="navbar__dropdown-item">Project Management</a>
+            <a href="alert-monitoring.html" class="navbar__dropdown-item">Alert Monitoring</a>
+          </div>
+        </div>
+        <a href="gallery.html" class="navbar__link">Gallery</a>
+        <a href="reach-back.html" class="navbar__link">Reach Back</a>
+        <div class="theme-switcher">
+          <button class="theme-switcher__btn" aria-label="Theme">
+            <span class="theme-switcher__icon--light">☀️</span>
+            <span class="theme-switcher__icon--dark">🌙</span>
+            <span class="theme-switcher__icon--system">💻</span>
+          </button>
+          <div class="theme-switcher__menu">
+            <button class="theme-switcher__option" data-mode="light">
+              <span class="theme-switcher__option-icon">☀️</span> Light
+              <span class="theme-switcher__option-check">✓</span>
+            </button>
+            <button class="theme-switcher__option" data-mode="dark">
+              <span class="theme-switcher__option-icon">🌙</span> Dark
+              <span class="theme-switcher__option-check">✓</span>
+            </button>
+            <button class="theme-switcher__option" data-mode="system">
+              <span class="theme-switcher__option-icon">💻</span> System
+              <span class="theme-switcher__option-check">✓</span>
+            </button>
+          </div>
+        </div>
+        <a href="contact.html" class="btn btn--primary btn--sm">Contact Us</a>
       </div>
-      <div>
-        <img src="../assets/images/staffing.jpg" alt="Technical Staffing" class="rounded-lg">
+      <button class="navbar__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">Service</span>
+      <h1>Technical <span class="text-accent">Staffing</span></h1>
+      <p>Onsite or remote talent — Bay Area and nationwide — with our proven contract-to-hire model and customized training programs.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="highlight-card" style="margin-bottom:32px">
+        <h3>6-Month Contract-to-Hire</h3>
+        <p>SVP works with clients to select candidates with similar skillsets — not an exact match. During the 6-month contract period, we bring each candidate up to speed with a customized training program. This model has been vetted and proven to be highly successful and cost-effective.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step" data-animate><div class="process-step__number">01</div><h3>Candidate Selection</h3><p>We match candidates with similar skillsets to your requirements and assess cultural fit.</p></div>
+        <div class="process-step" data-animate><div class="process-step__number">02</div><h3>Custom Training</h3><p>Each program is customized to bridge skill gaps during the contract period.</p></div>
+        <div class="process-step" data-animate><div class="process-step__number">03</div><h3>Permanent Placement</h3><p>After 6 months, trained employees transition to full-time — dedicated and ready to perform.</p></div>
       </div>
     </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-12">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2023 Silicon Valley Projects. All rights reserved.</p>
+  </section>
+  <section class="section section--alt">
+    <div class="container">
+      <div class="cta-banner"><h2>Need the right talent?</h2><p>We'll find dedicated professionals and get them ready for your team.</p><a href="contact.html" class="btn btn--white btn--lg" style="position:relative">Start Hiring</a></div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>&copy; 2025 Silicon Valley Projects. All Rights Reserved.</span>
+        <span>(510) 967-3000</span>
+      </div>
     </div>
   </footer>
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>

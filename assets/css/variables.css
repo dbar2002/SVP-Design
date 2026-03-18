@@ -1,0 +1,72 @@
+/* ============================================
+   SILICON VALLEY PROJECTS — Design Tokens
+   Light Theme (default)
+   ============================================ */
+:root {
+  --primary: #0B1F3F;
+  --primary-light: #132D5E;
+  --primary-soft: rgba(11, 31, 63, 0.06);
+  --accent: #00C2E0;
+  --accent-hover: #00A8C4;
+  --accent-glow: rgba(0, 194, 224, 0.1);
+  --secondary: #E8A020;
+  --secondary-soft: rgba(232, 160, 32, 0.08);
+  --bg: #FFFFFF;
+  --bg-alt: #F5F7FA;
+  --bg-card: #FFFFFF;
+  --bg-dark: #0B1F3F;
+  --bg-dark-light: #132D5E;
+  --text-heading: #0B1F3F;
+  --text-body: #3B4A63;
+  --text-muted: #7B8DA0;
+  --text-on-dark: #FFFFFF;
+  --text-on-dark-muted: rgba(255, 255, 255, 0.7);
+  --border: #E2E8F0;
+  --navbar-bg: rgba(255, 255, 255, 0.95);
+  --navbar-border: #E2E8F0;
+  --font: 'Plus Jakarta Sans', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.1);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --container-xl: 1200px;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-overlay: 30;
+  --z-modal: 40;
+}
+
+/* ============================================
+   Dark Theme
+   Applied via [data-theme="dark"] on <html>
+   ============================================ */
+[data-theme="dark"] {
+  --primary: #E8EDF4;
+  --primary-light: #B0BDD0;
+  --primary-soft: rgba(0, 194, 224, 0.08);
+  --bg: #0C1222;
+  --bg-alt: #111827;
+  --bg-card: #1A2236;
+  --bg-dark: #080E1A;
+  --bg-dark-light: #111827;
+  --text-heading: #E8EDF4;
+  --text-body: #B0BDD0;
+  --text-muted: #6B7D96;
+  --text-on-dark: #E8EDF4;
+  --text-on-dark-muted: rgba(255, 255, 255, 0.6);
+  --border: rgba(255, 255, 255, 0.1);
+  --navbar-bg: rgba(12, 18, 34, 0.92);
+  --navbar-border: rgba(255, 255, 255, 0.06);
+  --accent-glow: rgba(0, 194, 224, 0.15);
+  --secondary-soft: rgba(232, 160, 32, 0.12);
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
